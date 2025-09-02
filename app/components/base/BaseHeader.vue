@@ -15,9 +15,9 @@
       aria-label="Toggle Menu"
       :class="isOpen ? 'open' : null"
     >
-      <span></span>
-      <span></span>
-      <span></span>
+      <span class="line"></span>
+      <span class="line"></span>
+      <span class="line"></span>
     </button>
 
     <!-- nav -->
@@ -51,15 +51,31 @@
     cursor: pointer;
     z-index: 1001; // keeps button above menu
 
-    span {
+    .line {
       display: block;
       height: 3px;
       width: 100%;
-      background: var(--white);
+      background: var(--black);
       border-radius: 2px;
       transition: 0.3s ease;
     }
+    &.open {
+      .line {
+        background: var(--white);
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:nth-child(1) {
+          transform: translateY(7px) rotate(45deg);
+        }
+        &:nth-child(3) {
+          transform: translateY(-8px) rotate(-45deg);
+        }
+      }
+    }
   }
+
   .navigation {
     display: flex;
     flex-direction: column;
@@ -71,7 +87,8 @@
       right: 0;
       height: 100vh;
       width: 300px;
-      background: #111;
+      background: var(--black);
+      color: var(--white);
       flex-direction: column;
       transform: translateX(100%);
       transition: transform 0.3s ease;
@@ -80,6 +97,7 @@
 
       &.open {
         transform: translateX(0);
+        padding-top: 150px;
       }
 
       nav {
@@ -135,6 +153,7 @@
       margin: 0 0 0 8px;
     }
   }
+
   @media (max-width: 768px) {
     .navigation {
       align-items: flex-start;
@@ -142,12 +161,6 @@
 
     .hamburger {
       display: flex;
-
-      &:not(.open) {
-        span {
-          background-color: var(--black);
-        }
-      }
     }
 
     .nav-top,
