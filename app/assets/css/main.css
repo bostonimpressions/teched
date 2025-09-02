@@ -3,6 +3,11 @@
 
 @layer base {
   :root {
+    --primary: #1a8ec7;
+    --primarylight: #43bced;
+    --secondary: #f4dd0f;
+    --tertiary: #093347;
+
     --white: #ffffff;
     --offwhite: #f5f7fa;
     --blue: #198fc4;
@@ -47,10 +52,12 @@ h2 {
 }
 
 h3 {
-  color: var(--blue);
-  font-size: 30px;
-  line-height: 30px;
+  color: var(--white);
   text-transform: capitalize;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 h4 {
