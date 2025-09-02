@@ -4,7 +4,9 @@
   // )
 </script>
 
-<template>hello</template>
+<template>
+  <Hero />
+</template>
 
 <style lang="scss" scoped>
   @media (min-width: 768px) {
