@@ -85,36 +85,7 @@
             alt="TEP logo"
             class="branding-logo"
           />
-          <div class="social">
-            <a
-              href="https://www.linkedin.com/company/techedproducts"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="/icons/social-li.svg" alt="LinkedIn" />
-            </a>
-            <a
-              href="https://www.facebook.com/TechEdProducts"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="/icons/social-fb.svg" alt="Facebook" />
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCQlhFSd02QE4pKwGRSjW3Vw"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="/icons/social-yt.svg" alt="YouTube" />
-            </a>
-            <a
-              href="https://x.com/TechEdProducts"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="/icons/social-tw.svg" alt="Twitter" />
-            </a>
-          </div>
+          <BaseSocials />
         </div>
 
         <div class="contact">
@@ -237,43 +208,10 @@
   }
 
   .branding-logo {
-    margin: 0 auto;
+    margin: 0 auto 24px;
     width: 69px;
     height: 69px;
     aspect-ratio: 1/1;
-  }
-
-  .social {
-    display: flex;
-    gap: 15px;
-    padding: 24px 0 0;
-
-    > a {
-      width: 33.289px;
-      height: 33.289px;
-      padding: 7px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50px;
-      border: 2px solid rgba(255, 255, 255, 0.2);
-      transition:
-        border-color 0.3s ease,
-        transform 0.3s ease;
-
-      img {
-        transition: transform 0.3s ease;
-      }
-
-      &:hover {
-        border-color: var(--white);
-        transform: scale(1.1);
-
-        img {
-          transform: scale(1.1);
-        }
-      }
-    }
   }
 
   .contact {
@@ -373,7 +311,7 @@
       flex-direction: row;
     }
     .branding-logo {
-      margin: 0;
+      margin: 0 0 24px;
     }
     .contact {
       padding: 0;
