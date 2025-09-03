@@ -119,9 +119,8 @@
 <style scoped lang="scss">
   .section-products {
     position: relative;
-    padding: 80px;
+    padding: 40px;
     background: var(--lightblue);
-    border-radius: 20px;
 
     .slider-wrapper {
       position: relative;
@@ -200,16 +199,27 @@
       display: flex;
       flex-direction: column;
       gap: 20px;
-      margin: 74px auto 0;
+      margin: 32px auto 0;
       text-align: center;
       p {
-        font-size: 32px;
-
+        font-size: 18px;
         color: var(--black);
       }
       .button {
         width: fit-content;
         margin: 0 auto;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .section-products {
+      padding: 80px;
+      .products-cta {
+        margin: 74px auto 0;
+        p {
+          font-size: 32px;
+        }
       }
     }
   }

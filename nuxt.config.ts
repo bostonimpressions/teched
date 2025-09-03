@@ -18,6 +18,17 @@ export default defineNuxtConfig({
     }
   },
 
+  app: {
+    head: {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://use.typekit.net/plq2ktr.css'
+        }
+      ]
+    }
+  },
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/image',
