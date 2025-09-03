@@ -123,6 +123,10 @@
     background: var(--lightblue);
     border-radius: 20px;
 
+    .slider-wrapper {
+      position: relative;
+    }
+
     .swiper {
       border-radius: 20px;
       overflow: hidden;
@@ -186,10 +190,10 @@
     }
 
     .custom-prev {
-      left: 52px;
+      left: -26px;
     }
     .custom-next {
-      right: 52px;
+      right: -26px;
     }
 
     .products-cta {
