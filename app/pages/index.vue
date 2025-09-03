@@ -16,12 +16,10 @@
     <Brands />
   </Hero>
   <SectionProducts />
+  <SectionProductVideos />
 </template>
 
 <style lang="scss" scoped>
   @media (min-width: 768px) {
-    .test {
-      color: red;
-    }
   }
 </style>
