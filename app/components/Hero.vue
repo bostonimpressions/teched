@@ -31,10 +31,17 @@
     gap: 20px;
     text-align: center;
     max-width: 1047px;
+    padding: 30px 20px;
     margin: 0 auto;
     color: var(--white);
     :deep(p) {
       color: var(--white);
+    }
+  }
+
+  @media (min-width: 1048px) {
+    .hero-container {
+      padding: 0;
     }
   }
 </style>
